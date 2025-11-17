@@ -8,7 +8,6 @@ public class Expense {
     private LocalDate date;
 
 
-    public Expense(String description) {
-        this.description = description;
-    }
+
+
 }
