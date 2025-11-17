@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_add"
-        android:name="com.example.a7436.ui.main.ExpenseFragment"
+        android:name="com.example.a7436.ui.main.AddExpenseFragment"
         android:label="Thêm mới"
         tools:layout="@layout/fragment_add_expense" />
 
@@ -33,5 +33,16 @@
         android:id="@+id/navigation_profile"
         android:name="com.example.a7436.ui.main.ProfileFragment"
         android:label="Hồ sơ"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/navigation_edit_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_edit_profile"
+        android:name="com.example.a7436.ui.main.EditProfileFragment"
+        android:label="Chỉnh sửa Hồ sơ"
+        tools:layout="@layout/fragment_edit_profile" />
+
 </navigation>

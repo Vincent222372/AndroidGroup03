@@ -6,13 +6,17 @@ public class User {
     private String passwordHash;
     private String email;
     private String phoneNumber;
+    private String address;
+    private String profileImagePath; // New field
 
     // Constructor
-    public User(int userId, String username, String email, String phoneNumber) {
+    public User(int userId, String username, String email, String phoneNumber, String address, String profileImagePath) {
         this.userId = userId;
         this.username = username;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.address = address;
+        this.profileImagePath = profileImagePath;
     }
 
     // Getters and Setters
@@ -54,5 +58,21 @@ public class User {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getProfileImagePath() {
+        return profileImagePath;
+    }
+
+    public void setProfileImagePath(String profileImagePath) {
+        this.profileImagePath = profileImagePath;
     }
 }
