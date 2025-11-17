@@ -6,12 +6,13 @@ public class Expense {
     private String description;
     private double amount;
     private LocalDate date;
-
+    public Expense(){}
     public Expense(String description, double amount, LocalDate date) {
         this.description = description;
         this.amount = amount;
         this.date = date;
     }
+
 
     public String getDescription() {
         return description;
